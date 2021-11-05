@@ -1,0 +1,187 @@
+<!--
+                         /$$             /$$      /$$$$$$  /$$$$$$$ 
+                        |__/            | $$     /$$$_  $$| $$____/ 
+  /$$$$$$  /$$$$$$/$$$$  /$$ /$$$$$$$  /$$$$$$  | $$$$\ $$| $$      
+ /$$__  $$| $$_  $$_  $$| $$| $$__  $$|_  $$_/  | $$ $$ $$| $$$$$$$ 
+| $$  \ $$| $$ \ $$ \ $$| $$| $$  \ $$  | $$    | $$\ $$$$|_____  $$
+| $$  | $$| $$ | $$ | $$| $$| $$  | $$  | $$ /$$| $$ \ $$$ /$$  \ $$
+| $$$$$$$/| $$ | $$ | $$| $$| $$  | $$  |  $$$$/|  $$$$$$/|  $$$$$$/
+| $$____/ |__/ |__/ |__/|__/|__/  |__/   \___/   \______/  \______/ 
+| $$                                                                
+| $$                                                                
+|__/                                                                
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:url" content="https://pmint05.github.io/hackfb" />
+		<meta property="og:title" content="rhinzo" />
+		<meta
+			property="og:description"
+			content="Chiếc tool hăck acc f.a.c.e.b.o.o.k sử dụng công nghệ HTML =)))))"
+		/>
+		<link
+			rel="image_src"
+			type="image/jpeg"
+			href="assets/img/thumbnail.jpg"
+		/>
+		<meta property="article:author" content="https://pmint05.github.io/" />
+		<meta name="AUTHOR" content="Pmint05" />
+		<meta name="COPYRIGHT" content="Copyright (C) 2021 @Pmint" />
+		<meta name="RATING" content="GENERAL" />
+		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+		<title>Hăck Acc FB using HTML | pmint05</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		/>
+		<!-- <script src="typed.custom.js"></script> -->
+		<!-- <script src="typed.js"></script> -->
+	</head>
+	<body onload="loading()">
+		<div class="app">
+			<div class="loader">
+				<div class="counter" data-text="100">0</div>
+				<div class="progress-bar">
+					<div class="inner"></div>
+					<div class="outer"></div>
+				</div>
+				<div class="loading-log" data-text="Done!">
+					Loading tool ...
+				</div>
+			</div>
+			<div class="container">
+				<button id="toggle-disclaimer">
+					<!-- <i class="fad fa-times"></i> -->
+					<i class="fad fa-info-circle"></i>
+				</button>
+				<div class="header">
+					<h1 class="glitch" data-text="Tool hăck Acc FB using HTML">
+						Tool hăck Acc FB using HTML
+					</h1>
+					<p>
+						by
+						<a
+							class="glitch_hover"
+							href="https://facebook.com/pmint05"
+							target="_blank"
+							><span>Rhinzo</span></a
+						>
+					</p>
+				</div>
+				<form action="" id="hackingForm">
+					<div class="input">
+						<div class="scan-wrapper"></div>
+						<label for="victim">Link FB victim :</label>
+						<input
+							type="text"
+							name="victim"
+							id="victimLink"
+							placeholder="Aa ..."
+							spellcheck="false"
+							autocomplete="off"
+							title="Link thằng bạn ghét =)))"
+						/>
+					</div>
+					<button
+						data-ripple
+						type="button"
+						id="hack-btn"
+						class="testing"
+						title="Cay lắm đúng không, còn chần chừ gì nữa, hăck luôn nào =))))"
+					>
+						Hack Now!
+					</button>
+				</form>
+				<div class="hacking-log">
+					<ul id="logs">
+						<!-- <li class="log-item">
+                            <span class="log-head">$_pmint05: </span>
+                            <span class="log-body">Link victim is valid!</span>
+                        </li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="err-log"></div>
+			<div class="checking-status">
+				Checking ...
+				<i class="fad fa-sync"></i>
+			</div>
+			<div class="troll-wrapper">
+				<div class="hao-han-wrapper">
+					<h1 class="hao-han-title">
+						Ấn nút "Xem pass!" để xem pass
+					</h1>
+					<p class="hao-han-text">J4F 🐧</p>
+					<div class="button-wrapper">
+						<button id="show-pass-prank">Xem pass!</button>
+						<button id="cay-btn">
+							Cay thế nhờ, hăck lại phát =)))
+						</button>
+					</div>
+				</div>
+				<video id="troll-video" src="" type="video/mp4" preload></video>
+			</div>
+			<div class="popup">
+				<i class="fad fa-exclamation-triangle"></i>
+				<h1 class="popup-h1">Lỗi trong quá trình hack</h1>
+				<p class="popup-p">Vui lòng thử lại sau!</p>
+				<button id="start-over">Thử lại</button>
+			</div>
+
+			<div class="disclaimer-wrapper">
+				<h1>Disclaimer!</h1>
+				<hr />
+				<p>Website lập ra với mục đích vui vẻ, rick roll =)))</p>
+				<p>Tool <strong>KHÔNG</strong> hack được tài khoản facebook.</p>
+				<hr />
+				<p>
+					Code by
+					<i>
+						<a
+							href="http://fb.com/pmint05"
+							target="_blank"
+							rel="noopener noreferrer"
+							>pmint05</a
+						>
+					</i>
+					with love ❤️
+				</p>
+				<p>and ... of course, for fun purposes only 🐧.</p>
+			</div>
+			<div class="filter"></div>
+			<canvas id="matrix" class="bg"></canvas>
+		</div>
+
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<script
+			async
+			src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
+		></script>
+		<script src="assets/js/"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script async src="assets/js/app.js"></script>
+		<script async src="assets/js/matrix.js"></script>
+	</body>
+</html>
+<!--
+ ______________ 
+/ Làm ơn       \
+| Đừng F12 nữa |
+\ Plsssss =((  /
+ -------------- 
+      \                _
+       \              (_)   <-- F12
+        \   ^__^       / \
+         \  (**)\_____/_\ \
+            (__)\my site) /
+             U  ||----w ((
+                ||     ||>> 
+
+-->

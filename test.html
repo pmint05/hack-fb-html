@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#cursor {
+			animation: caret 1s infinite ease-in-out;
+		}
+
+		@keyframes caret {
+			50% {
+				opacity: 0;
+			}
+		}
+		li {
+			display: flex;
+		}
+	</style>
+	<body>
+		<iframe
+			src="https://open.spotify.com/embed/playlist/5eTJbQKmjmD6kI9BIh4020?utm_source=generator&amp;theme=0"
+			width="100%"
+			height="380"
+			frameborder="0"
+			allowfullscreen=""
+			allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+		></iframe>
+		<button onclick="load()">Type</button>
+		<button onclick="Delete()">Delete</button>
+		<div class="test"></div>
+		<script src="typed.js"></script>
+		<script>
+			var t = document.querySelector(".test");
+			// var twirlTimer = (function () {
+			// 	var P = ["\\", "|", "/", "-"];
+			// 	var x = 0;
+			// 	return setInterval(function () {
+			// 		t.innerHTML = P[x++];
+			// 		x &= 3;
+			// 	}, 250);
+			// })();
+			var txt = "██████████";
+			var i = 0;
+			function load() {
+				function loading() {
+					setTimeout(function () {
+						t.innerHTML += txt[i];
+						i++;
+						if (i < 10) {
+							loading();
+						}
+						if (i == 10) {
+							clearInterval(loading);
+						}
+					}, 500);
+				}
+				loading();
+			}
+
+			// var dataText = [
+			// 	"Link victim 1231212213sadasdasdasasdasdasdas312!",
+			// 	"Link victim 2123ádasdasasasdasd!",
+			// 	"Link victim 3dsadas!",
+			// ];
+			// // const cursor = '<span id="cursor" aria-hidden="true"></span>';
+			// const cursor = document.createElement("SPAN");
+			// cursor.id = "cursor";
+			// cursor.innerHTML = "_";
+			// const test = document.querySelector(".test");
+			// const head = '<span class="log-head">$ pmint05: </span>';
+			// var i = 0;
+			// function typeWriter() {
+			// 	var j = 0;
+			// 	var speed = 50; /* The speed/duration of the effect in milliseconds */
+			// 	let li = document.createElement("LI");
+			// 	let span = document.createElement("SPAN");
+			// 	span.innerHTML = head;
+			// 	li.appendChild(span);
+			// 	li.appendChild(cursor);
+			// 	test.appendChild(li);
+			// 	// test.scrollTop = test.scrollHeight;
+			// 	function typing() {
+			// 		if (j < dataText[i].length && i < dataText.length) {
+			// 			span.innerHTML += dataText[i].charAt(j);
+			// 			j++;
+			// 			setTimeout(typing, speed);
+			// 		}
+			// 	}
+			// 	typing();
+			// 	if (i < dataText.length - 1) {
+			// 		let timeToOut = dataText[i].length * 50 + 5000;
+			// 		setTimeout(() => {
+			// 			i++;
+			// 			typeWriter();
+			// 			if (i == dataText.length - 1) {
+			// 				// hacked();
+			// 			}
+			// 		}, timeToOut);
+			// 	}
+			// }
+		</script>
+	</body>
+</html>
