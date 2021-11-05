@@ -178,8 +178,9 @@ function startOver() {
 	}, 1000);
 }
 function checkVictim(link) {
-	let pattern =
-		/^(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*#!\/)?(?:pages\/)?(?:[?\w\-]*\/)?(?:profile.php\?id=(?=\d.*))?([\w\-]*)?$/;
+// 	let pattern =
+// 		/^(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*#!\/)?(?:pages\/)?(?:[?\w\-]*\/)?(?:profile.php\?id=(?=\d.*))?([\w\-]*)?$/;
+	let pattern = /^(https?:\/\/)?((w{3}\.)?)facebook.com\/.*/i;
 	if (pattern.test(link)) {
 		return true;
 	}
