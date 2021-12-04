@@ -2,7 +2,7 @@ function detectDevTool() {
 	setTimeout(() => {
 		if (window.innerWidth < window.outerWidth) {
 			alert(
-				"Đừng F12 nữa, plssssss, Mik có share source code ở github màk 😿"
+				"Đừng F12 nữa, plssssss, source code ở github của em 😿"
 			);
 			location.reload();
 		}
