@@ -1,6 +1,6 @@
 function detectDevTool() {
 	setTimeout(() => {
-		if (window.innerWidth < window.outerWidth - 50) {
+		if (window.innerWidth < window.outerWidth - 100) {
 			alert(
 				"F12???"
 			);
