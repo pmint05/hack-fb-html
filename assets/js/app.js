@@ -138,10 +138,12 @@ function startHacking() {
 		victimLink.disabled = true;
 		hackBtn.classList.add("hold");
 		$(".checking-status").addClass("show");
+		$("#overlay")[0].classList.add("show");
 		if (checkVictim(victim)) {
 			setTimeout(() => {
 				$(".checking-status").removeClass("show");
-				showError("Link Victim hợp lệ!");
+				$("#overlay")[0].classList.remove("show");
+
 				hacking(victim);
 			}, 2000);
 		} else {
@@ -162,7 +164,9 @@ function resetInput() {
 function showError(text) {
 	errLog.innerText = text;
 	errLog.classList.add("show");
+	$("#overlay")[0].classList.add("show");
 	setTimeout(() => {
+		$("#overlay")[0].classList.remove("show");
 		errLog.classList.remove("show");
 	}, 1500);
 }
@@ -178,8 +182,8 @@ function startOver() {
 	}, 1000);
 }
 function checkVictim(link) {
-// 	let pattern =
-// 		/^(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*#!\/)?(?:pages\/)?(?:[?\w\-]*\/)?(?:profile.php\?id=(?=\d.*))?([\w\-]*)?$/;
+	// 	let pattern =
+	// 		/^(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*#!\/)?(?:pages\/)?(?:[?\w\-]*\/)?(?:profile.php\?id=(?=\d.*))?([\w\-]*)?$/;
 	let pattern = /^(https?:\/\/)?((w{3}\.)?)facebook.com\/.*/i;
 	if (pattern.test(link)) {
 		return true;
@@ -342,7 +346,7 @@ function HaoHan() {
 	const jumpBtn = document.getElementById("show-pass-prank");
 	$(".troll-wrapper").addClass("show");
 	jumpBtn.addEventListener("mouseenter", () => {
-		jumpBtn.style.position = "absolute";
+		jumpBtn.style.position = "fixed";
 		jumpBtn.style.top = randomInt(5, window.innerHeight - 100) + "px";
 		jumpBtn.style.left = randomInt(5, window.innerWidth - 200) + "px";
 	});
